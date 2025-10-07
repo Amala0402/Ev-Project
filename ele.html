@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ele.css">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="image1.png" type="image/png">
+    <title>Find Nearest Electric Charge</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo" style="color: white;">
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a href="#service-section">Service</a></li>
+                <li class="about">
+                    <a href="#">About Us</a>
+                    <div class="popup-div">
+                        <h3>Locate the Nearest EV Charging Stations</h3>
+                        <p>Our platform helps you find the nearest electric vehicle charging stations with ease. Simply enter your location, and we'll guide you to the closest available charging points.</p>
+                    </div>
+                </li>                
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="photo"></div>
+
+        <div class="herocon">
+            <h1 style="font-size: 40px;">
+                Locate the Nearest EV <br><br>
+                <span style="color: chartreuse;">Charging Station</span>
+            </h1>
+            <br>
+            <input type="text" placeholder="Enter Your Location" style="height: 20px;">
+            <button onclick="fetchData()">Click here!</button>
+        </div>
+
+        <div class="four-stations">
+            <div class="content">
+                <h1 style="font-size: 40px;">
+                    Efficient EV <br><br> Charging Locator
+                </h1>
+                <div class="add-video">
+                    <video autoplay loop controls class="add-video">
+                        <source src="ele_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="stations">
+                <div class="stat1">
+                    <div class="stat first">  
+                    </div>
+                    <h4 style="margin-left: 30px;">Locate EV Charging Stations</h4>
+                    <p style="margin-top: 5px;">
+                    <h5>Find charging stations instantly based on your <br> or travel route for uninterrupted journeys.</h5>
+                    </p>
+                    <div class="stat second">
+                    </div>
+                    <h4 style="margin-left: 30px;">Monitor Charging Availability</h4>
+                    <h5>Check real-time availability of EV chargers to <br>avoid waiting  or unnecessary stops.</h5>
+                      
+                </div>
+
+                <div class="stat2">
+                    <div class="stat third">
+                    </div>
+                    <h4 style="margin-left: 30px;">Plan Smart Charging Routes</h4>
+                    <h5>Get route suggestions with strategically placed <br>charging points to optimize your EV travel.</h5>
+
+                    <div class="stat fourth">
+                    </div>
+                    <h4 style="margin-left: 30px;">Track Charging History & Usage</h4>
+                    <h5>Access your previous charging sessions and<br> monitor your EV energy usage efficiently.</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="location-tab">
+            <div class="locat">
+                <h1 style="text-align: center; color:chartreuse; padding: 20px 0;">Charging Spot Near You</h1> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d52217.78459587078!2d80.64237863020304!3d16.502556097951185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1selectric%20charging%20stations%2C%20ramavarpadu%2C%20andhra%20pradesh!5e0!3m2!1sen!2sin!4v1745496344159!5m2!1sen!2sin"
+                 width="600" 
+                 height="450" 
+                 style="border:0;" 
+                 allowfullscreen=""
+                 loading="lazy" 
+                 referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        
+
+        <section id="service-section" class="services">
+            <h2>Our EV Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Locate Charging Stations</h3>
+                    <p>Find EV charging stations near your current location in real-time.</p>
+                </div>
+                <div class="card">
+                    <h3>Trip Planner</h3>
+                    <p>Plan long-distance journeys with optimized EV stopovers.</p>
+                </div>
+                <div class="card">
+                    <h3>Fast Charging</h3>
+                    <p>Connect with fast chargers to save time on your journey.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have questions about nearby EV stations, partnerships, or feedback, we’d love to hear from you!</p>
+        
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="4" placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> EV Locator HQ, Hyderabad, India</p>
+          <p><i class="fas fa-envelope"></i> support@evlocator.com</p>
+          <p><i class="fas fa-phone-alt"></i> +91 99999 99999</p>
+        </div>
+      </section>      
+    <footer class="foot">
+        <div class="div1">
+            <p>Service</p> 
+            <p>About</p> 
+            <p>Contact</p>
+        </div>
+        <div class="div2">
+            <i class="fab fa-instagram icon" style="font-size: 20px;"></i>
+            <i class="fab fa-facebook-f icon" style="font-size: 20px;"></i>
+            <i class="fab fa-twitter icon" style="font-size: 20px;"></i>
+        </div>
+        <div class="div3">
+            <p>© All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="ele.js"></script>
+</body>
+</html>
